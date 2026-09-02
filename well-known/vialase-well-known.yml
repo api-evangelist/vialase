@@ -1,0 +1,43 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTP probes of the ViaLase web host (2026-09-02)
+note: >-
+  Every named /.well-known/ path returned 404 on www.vialase.com. The 404 body is the WordPress
+  theme's HTML error page (or nginx's default 404 for paths the CMS does not route), not a served
+  document, so no WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a
+  verified absence. The apex vialase.com 301s to www.vialase.com, so only the canonical www host
+  was probed. No api./developer./docs./status./portal./trust. hostname exists in DNS for the domain,
+  so there is no second host to probe.
+hosts:
+- host: www.vialase.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null

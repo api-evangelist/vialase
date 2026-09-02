@@ -64,5 +64,12 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ViaLase is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+ViaLase, Inc. is a venture and strategic capital-backed, clinical stage medical technology company in Aliso Viejo, California, developing the ViaLuxe Laser System — a femtosecond laser with micron-resolution OCT image guidance that performs femtosecond laser image-guided high-precision trabeculotomy (FLigHT) for open-angle glaucoma.
+
+**No public API surface.** A 2026-09-02 enrichment pass found no developer portal, API reference, SDK, CLI, MCP server, agent card, or machine-readable specification on any ViaLase host, and no `api.`/`developer.`/`docs.`/`status.` hostname in DNS. The only machine-readable JSON on the domain is the marketing site's stock WordPress core REST API at `/wp-json/`. This profile records that honest absence; see `x-coverage` in `apis.yml`.
+
+- Website: https://www.vialase.com/
+- News: https://www.vialase.com/news/
+- News (RSS): https://www.vialase.com/feed/
+- FLigHT Practice Planner: https://www.vialase.com/planner/
+- Privacy Policy: https://www.vialase.com/privacy-policy/

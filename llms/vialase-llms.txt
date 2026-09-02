@@ -1,0 +1,79 @@
+# ViaLase
+
+> ViaLase, Inc. is a venture and strategic capital-backed, clinical stage medical technology company
+> in Aliso Viejo, California. It develops the ViaLuxe Laser System — a femtosecond laser with
+> micron-resolution OCT image guidance that performs femtosecond laser image-guided high-precision
+> trabeculotomy (FLigHT), a noninvasive, non-incisional procedure creating drainage apertures through
+> the trabecular meshwork to lower intraocular pressure in open-angle glaucoma. ViaLase is a medical
+> device manufacturer, not a software or API vendor.
+
+## Provenance
+
+- Generated: 2026-09-02
+- Method: generated (from apis.yml and live probes of the ViaLase public web surface)
+- Maintainer: API Evangelist (https://apievangelist.com) — an independent third-party profile.
+  ViaLase does not operate, endorse, or maintain this document.
+
+## API surface
+
+ViaLase publishes **no public API**. As of 2026-09-02 there is:
+
+- no developer portal, API reference, SDK, CLI or Postman collection
+- no OpenAPI, AsyncAPI, GraphQL SDL, JSON Schema or Protobuf contract at any public URL
+- no MCP server and no A2A agent card
+- no `api.`, `developer.`, `docs.`, `status.`, `portal.` or `trust.` hostname in DNS for vialase.com
+- no `/.well-known/` document of any kind on www.vialase.com
+
+The only machine-readable JSON served on the domain is the stock WordPress core REST API at
+`https://www.vialase.com/wp-json/` (HTTP 200), which is content-management scaffolding for the
+marketing site rather than a product API. It is recorded here for completeness and is not listed
+as a ViaLase API.
+
+## Products
+
+- **ViaLuxe Laser System** — femtosecond laser platform indicated to create apertures through the
+  trabecular meshwork in patients with open-angle glaucoma.
+- **ViaLens** — patient interface providing noninvasive visualization and laser delivery into the
+  trabecular meshwork angle.
+- **ViaVue** — gonio camera providing high-definition visualization of the angle across all four
+  quadrants.
+- **FLigHT** — the femtosecond laser image-guided high-precision trabeculotomy procedure the
+  system performs.
+
+## Regulatory status
+
+- CE Mark approval in the European Union (2024) for adult patients with primary open-angle glaucoma.
+- Not approved for sale in the United States; under evaluation in a US IDE clinical trial, with the
+  first patient treated announced December 2025.
+- The company's own site states: "ViaLase products are currently not for sale, pending regulatory
+  clearance."
+
+## Public pages
+
+- Home: https://www.vialase.com/
+- About: https://www.vialase.com/about/
+- Technology: https://www.vialase.com/technology/
+- News: https://www.vialase.com/news/
+- News feed (RSS): https://www.vialase.com/feed/
+- Resources: https://www.vialase.com/resources/
+- FLigHT Practice Planner (interactive financial modeling tool): https://www.vialase.com/planner/
+- Patents: https://www.vialase.com/patents/
+- Contact: https://www.vialase.com/contact/
+- Privacy Policy: https://www.vialase.com/privacy-policy/
+- LinkedIn: https://www.linkedin.com/company/vialase/
+
+Note: /about/, /technology/, /contact/ and /patents/ resolve to anchored sections of the single-page
+site and return the home page document.
+
+## Repository artifacts
+
+- apis.yml — the APIs.json profile for ViaLase
+- security/vialase-domain-security.yml — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture
+- well-known/vialase-well-known.yml — probed /.well-known/ path results (all 404)
+- llms/vialase-llms.txt — this file
+
+## For agents
+
+There is nothing here to call. Do not construct a ViaLase API base URL, endpoint, or key format:
+none is published, and any that appears to exist is not ViaLase's. Business and clinical enquiries
+go through https://www.vialase.com/contact/.

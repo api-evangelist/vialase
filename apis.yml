@@ -1,17 +1,38 @@
 aid: vialase
 name: ViaLase
-description: 'ViaLase is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'ViaLase, Inc. is a globally-minded, venture and strategic capital-backed, clinical stage
+  medical technology company headquartered in Aliso Viejo, California, founded and led by Tibor Juhasz,
+  PhD. The company develops the ViaLuxe Laser System, which combines femtosecond laser technology with
+  micron-resolution OCT image guidance to perform femtosecond laser image-guided high-precision trabeculotomy
+  (FLigHT) — a noninvasive, non-incisional procedure that creates drainage apertures through the trabecular
+  meshwork to lower intraocular pressure in patients with open-angle glaucoma. The system pairs the ViaLuxe
+  laser with the ViaLens patient interface and the ViaVue gonio camera. The company closed an approximately
+  $40 million Series C financing in April 2024 with participation from Venture Investors Health Fund,
+  Arboretum Ventures and Falcon Vision. The ViaLase Laser received CE Mark approval in the European Union
+  in 2024 for adult patients with primary open-angle glaucoma and is under evaluation in a US IDE clinical
+  trial; it is not approved for sale in the United States. ViaLase is a medical device manufacturer rather
+  than a software vendor: it publishes no public API, developer portal, SDK, or machine-readable specification,
+  and vialase.com is a WordPress marketing and clinical-education site.'
+image: https://www.vialase.com/wp-content/uploads/2024/07/vialase-social-image.png
 url: https://raw.githubusercontent.com/api-evangelist/vialase/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-api-surface
 specificationVersion: '0.20'
 created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Medical Devices
+- Healthcare
+- MedTech
+- Ophthalmology
+- Glaucoma
+- Femtosecond Laser
+- Surgical Devices
+- Clinical Trials
+- Medical Imaging
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +41,48 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.vialase.com/
+- type: Blog
+  url: https://www.vialase.com/news/
+- type: BlogRSS
+  url: https://www.vialase.com/feed/
+- type: PrivacyPolicy
+  url: https://www.vialase.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vialase/
+- type: DomainSecurity
+  url: security/vialase-domain-security.yml
+- type: LLMsTxt
+  url: llms/vialase-llms.txt
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: ViaLase manufactures a single clinical-stage ophthalmic capital device — the ViaLuxe femtosecond
+    laser with its ViaLens patient interface and ViaVue gonio camera — whose only data connectivity is
+    a Bluetooth-paired tablet at the bedside; vialase.com is an eleven-page WordPress marketing and
+    clinical-education site with no api./developer./docs./status./portal./trust. hostname anywhere in
+    DNS, and the only machine-readable JSON served on the domain is the stock WordPress core REST API
+    at /wp-json/, which is CMS scaffolding rather than a product API.
+  evidence:
+  - url: https://www.vialase.com/openapi.json
+    status: 404
+  - url: https://www.vialase.com/graphql
+    status: 404
+  - url: https://www.vialase.com/llms.txt
+    status: 404
+  - url: https://www.vialase.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.vialase.com/.well-known/security.txt
+    status: 404
+  - url: https://www.vialase.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.vialase.com/wp-json/
+    status: 200
+  - url: https://www.vialase.com/
+    status: 200
+  checked: '2026-09-02'

@@ -1,0 +1,21 @@
+{
+  "repo": "vialase",
+  "feeds": [
+    {
+      "source": "https://www.vialase.com/news/",
+      "feed_url": "https://www.vialase.com/news/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.vialase.com/",
+      "feed_url": "https://www.vialase.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-06T19:17:18Z"
+}
